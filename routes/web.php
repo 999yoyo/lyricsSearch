@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PostController@index');
+Route::get('/search','PostController@search');
+
+//Route::get('/', function() {
+//    return view('posts/index');
+//});
+
+Auth::routes();
+URL::forceScheme('https');
+
+Route::get('/home', 'HomeController@index')->name('home');
