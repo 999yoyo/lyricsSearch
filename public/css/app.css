@@ -45,7 +45,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -66,7 +66,7 @@ section {
 
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;
@@ -96,7 +96,8 @@ h6 {
 }
 
 h1{
-  color: #e6855e;
+  color: #ffcc4a;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 h5{
   margin: 30px 300px;
@@ -104,27 +105,35 @@ h5{
 .header {
   font-family: "Avenir Next";
   color: white;
-  background-color: #26d0c9;
+  background-color: #2f5167;
   height: 70px;
 }
 
 .header-logo {
   padding: 15px;
-   float: left;
+  float: left;
+  font-weight: bold;
+}
+
+.header-logo a {
+  color: #ffcc4a;
+  display: block;
 }
 
 .search {
   padding: 50px;
+  text-align: center;
 }
 
-.posts {
-  padding: 50px;
-}
 .submit {
   background-color: #dee7ec;
-  color: #889eab;
+  color: #343a40;
   margin: 10px 75px;
   width: 150px;
+  border-radius: 10px;
+}
+.submit:hover {
+    background-color: #ffcc4a;
 }
 
 input {
@@ -135,10 +144,6 @@ input {
 }
 h3 {
   padding: 5px;
-}
-
-.search {
-  text-align: center;
 }
 
 li {
@@ -155,12 +160,64 @@ li {
 }
  
 
-.display{
-  padding: 200;
-}
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+.top-wrapper {
+  padding-top: 180px;
+  padding-bottom: 200px;
+  background-image: url(./IMG_8297.png);
+  color: white;
+  background-size: cover;
+  text-align: center;
+}
+
+.wrapper-title {
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+}
+
+.fa-regular {
+  font-family: Font Awesome\ 5 Free;
+}
+
+.fa-brands {
+  font-family: Font Awesome\ 5 Free;
+}
+
+div {
+  transition: all 1s;
+}
+
+.fa-question:hover , .fa-comment:hover {
+  color: #ffcc4a;
+}
+
+.headline {
+  width: 900px;
+  height: 150px;
+  margin: 0 auto;
+  background-color: #ffcc4a;
+  text-align: center;
+  border-radius: 300px;
+}
+
+.headline .display{
+  width: 800px;
+  font-size: 35px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.headline .title {
+  padding-top: 15px;
+}
+
+.headline .artist {
+  padding-bottom: 15px;
 }
 
 abbr[title],

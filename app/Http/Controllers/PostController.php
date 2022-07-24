@@ -15,9 +15,13 @@ class PostController extends Controller
     public function search(PostRequest $request)
     {
         $curl = curl_init();
+        // $title = rawurlencode($request["title"]);
+        // dd($title);
+        $title = rawurlencode($request["title"]);
+        $artist = rawurlencode($request["artist"]);
         $apikey = config('services.powerlyrics.apikey');
         curl_setopt_array($curl, [
-        	CURLOPT_URL => "https://powerlyrics.p.rapidapi.com/getlyricsfromtitleandartist?title=Do%20You%20See&artist=Warren%20G",
+        	CURLOPT_URL => "https://powerlyrics.p.rapidapi.com/getlyricsfromtitleandartist?title=${title}&artist=${artist}",
         	CURLOPT_RETURNTRANSFER => true,
         	CURLOPT_FOLLOWLOCATION => true,
         	CURLOPT_ENCODING => "",
@@ -35,16 +39,18 @@ class PostController extends Controller
         $err = curl_error($curl);
         
         curl_close($curl);
-        
-        if ($err) {
+        //dd($response);
+        // if (boolval($err)||!boolval($response['success'])) {
+        if($err){
         	echo "cURL Error #:" . $err;
+        	return view('posts/index');
         } else {
         	$response = json_decode($response,true);
-        	//dd($response['lyrics']);
+        	return view('posts/search')->with([
+        	    'title' => $request['title'],
+        	    'artist' => $request['artist'],
+                'lyrics' => $response['lyrics'],
+            ]);
         }
-        
-        return view('posts/search')->with([
-            'lyrics' => $response['lyrics'],
-        ]);
     }
 }

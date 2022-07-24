@@ -5,26 +5,30 @@
         <title>LYRICS SEARCH</title>
         <!-- Fonts -->
         <link href="css/app.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/eea364082e.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="header">
-            <h1 class="header-logo">LYRICS SEARCH</h1>
+            <h1 class="header-logo"><a href = "/"><span class="fa-regular fa-ghost"> LYRICS SEARCH              
+            </span></a></h1>
             <div class="header-list">
                 <ul>
-                    <li>このサイトについて</li>
-                    <li>お問い合わせ</li>
+                    <li><span class="fa-regular fa-question"> このサイトについて</span></li>
+                    <li><span class="fa-regular fa-comment"> お問い合わせ</span></li>
                 </ul>
             </div>
         </div>
-            <h5 class="display">{!! nl2br(e($lyrics)) !!}</h5>
-        
-        <div>
-        <a href = "/">戻る</a>
         </div>
         
+        <div class="headline">
+            <h5 class="display title"><span class="fa-regular fa-compact-disc"> {{$title}}</span></h5>
+            <h5 class="display artist"><span class="fa-regular fa-headphones"> {{$artist}}</span></h5>    
+        </div>
+        
+            <h5 class="display">{!! nl2br(e($lyrics)) !!}</h5>
         
         <div class="footer">
-            <div class="footer-logo">歌詞翻訳サイト</div>
+            <div class="footer-logo">歌詞翻訳サイト https://frozen-sierra-50756.herokuapp.com</div>
         </div>
     
     </div>
