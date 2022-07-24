@@ -12,6 +12,11 @@ class PostController extends Controller
     {
         return view('posts/index');
     }
+    
+    public function information(){
+        return view('posts/information');
+    }
+    
     public function search(PostRequest $request)
     {
         $curl = curl_init();

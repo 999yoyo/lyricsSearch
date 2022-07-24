@@ -9,11 +9,11 @@
     </head>
     <body>
         <div class="header">
-            <h1 class="header-logo"><a href = "/"><span class="fa-regular fa-ghost"> LYRICS SEARCH              
-            </span></a></h1>
+            <a href = "/"><h1 class="header-logo"><span class="fa-regular fa-ghost"> LYRICS SEARCH              
+            </span></h1></a>
             <div class="header-list">
                 <ul>
-                    <li><span class="fa-regular fa-question"> このサイトについて</span></li>
+                    <li><a href = "/information"><span class="fa-regular fa-question"> このサイトについて</span></a></li>
                     <li><span class="fa-regular fa-comment"> お問い合わせ</span></li>
                 </ul>
             </div>

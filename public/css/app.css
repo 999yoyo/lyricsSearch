@@ -113,11 +113,31 @@ h5{
   padding: 15px;
   float: left;
   font-weight: bold;
+  color: #ffcc4a;
 }
 
 .header-logo a {
   color: #ffcc4a;
   display: block;
+}
+.header-logo:hover{
+  transform:scale(1.02,1.02);
+  transition: 0.5s;
+}
+
+.header-list a {
+  color: white;
+}
+
+.information {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.information p {
+  font-size: 17px;
 }
 
 .search {
@@ -134,6 +154,7 @@ h5{
 }
 .submit:hover {
     background-color: #ffcc4a;
+    transition: 0.5s;
 }
 
 input {
@@ -207,17 +228,19 @@ div {
 
 .headline .display{
   width: 800px;
-  font-size: 35px;
   padding-top: 20px;
   margin: 0 auto;
 }
 
 .headline .title {
   padding-top: 15px;
+  font-weight: bold;
+    font-size: 50px;
 }
 
 .headline .artist {
   padding-bottom: 15px;
+  font-size: 30px;
 }
 
 abbr[title],

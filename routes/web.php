@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PostController@index');
 Route::get('/search','PostController@search');
+Route::get('/information','PostController@information');
 
 //Route::get('/', function() {
 //    return view('posts/index');
