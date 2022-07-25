@@ -57,12 +57,7 @@ class PostController extends Controller
                 'lyrics' => $response['lyrics'],
             ]);
         }
-        
-    public function DeepL(PostRequest $request)
-    {
-        $API_KEY = config('services.DeepL.DeepLkey');
-        $base_url = config('services.openweathermap.url');
-    }
+
         
         
         
