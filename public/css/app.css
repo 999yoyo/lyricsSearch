@@ -151,6 +151,7 @@ h5{
   margin: 10px 75px;
   width: 150px;
   border-radius: 10px;
+  box-shadow: 3px 3px #2f5167;
 }
 .submit:hover {
     background-color: #ffcc4a;
@@ -209,6 +210,10 @@ p {
   font-family: Font Awesome\ 5 Free;
 }
 
+.fa-solid {
+  font-family: Font Awesome\ 5 Free;
+}
+
 div {
   transition: all 1s;
 }
@@ -241,6 +246,41 @@ div {
 .headline .artist {
   padding-bottom: 15px;
   font-size: 30px;
+}
+
+.lesson {
+  float: left;
+  width: 33%;
+  text-align: center;
+  font-size: 130PX;
+}
+
+.targetZ {
+  transition: .5s ;
+  transform: rotateZ( 0deg ) ;
+}
+.container1:hover .targetZ {
+  transform: rotateZ( 360deg ) ;
+}
+
+.lessons {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #ffcc4a;
+  text-align: center;
+  border-radius: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.lesson-icon {
+  transition: .3s;
+}
+
+.lesson-icon:hover {
+  transform: rotateZ( 30deg );
+  transform: scale(1.1, 1.1);
 }
 
 abbr[title],
