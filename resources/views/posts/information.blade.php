@@ -14,7 +14,7 @@
             <div class="header-list">
                 <ul>
                     <li><a href = "/information"><span class="fa-regular fa-question"> このサイトについて</span></a></li>
-                    <li><span class="fa-regular fa-comment"> お問い合わせ</span></li>
+                    <li><a href = "/inquiry"><span class="fa-regular fa-comment"> お問い合わせ</span></a></li>
                 </ul>
             </div>
         </div>

@@ -19,31 +19,16 @@
             </div>
         </div>
         
-        <div class="top-wrapper">
-            <div class="container">
-                <h1 class="wrapper-title">OPTIMIZE YOUR LEARNING</h1>
-                <h1 class="wrapper-title">ENJOY YOUR LEARNING</h1>
-                <p class>歌詞を検索・翻訳できるサービスです。</p>
-            </div>
+        <div class='posts'>
+            @foreach ($posts as $post)
+                <div class='post'>
+                    <p class='title'>{{ $post->title }}</p>
+                    <p class='body'>{{ $post->body }}</p>
+                </div>
+            @endforeach
         </div>
 
-        <div class="main">
-        <form action = "/search" method = "get">
-            @csrf
-            <div class='search'>
-                <h3>
-                    <span class="fa-regular fa-headphones-simple">曲名</span>
-                </h3>
-                <input type="text" name="title" value="{{ old('title') }}">
-                <p class="title__error" style="color:red">{{ $errors->first('title') }}</p>
-                <h3>アーティスト名</h3>
-                <input type="text" name="artist" value="{{ old('artist') }}"><br>
-                <p class="title__error" style="color:red">{{ $errors->first('artist') }}</p>
-                <input class="submit" type="submit" value="検索">
-            </div>
-        </form>
-        
-
+             
         
         <div class="footer">
             <div class="footer-logo">歌詞翻訳サイト https://frozen-sierra-50756.herokuapp.com</div>

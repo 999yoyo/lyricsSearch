@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PostController@index');
 Route::get('/search','PostController@search');
 Route::get('/information','PostController@information');
+Route::get('/inquiry','PostController@inquiry');
+Route::get('/post' , 'PostController@post');
 
 //Route::get('/', function() {
 //    return view('posts/index');
