@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\PostRequest;
 use DeepL\Translator;
 
+
 class PostController extends Controller
 {
 
@@ -28,6 +29,14 @@ class PostController extends Controller
         return view('posts/inquiry');
     }
     
+    public function store(Request $request, Post $post)
+    {
+        //dd($request->all());
+        $input = $request['post'];
+        $post->fill($input)->save();
+        return redirect('/post');
+    }
+        
     public function search(PostRequest $request)
     {
         $curl = curl_init();
@@ -55,7 +64,7 @@ class PostController extends Controller
         $err = curl_error($curl);
         
         curl_close($curl);
-        //dd($response);
+          //dd($response);
         // if (boolval($err)||!boolval($response['success'])) {
         if($err){
         	echo "cURL Error #:" . $err;
@@ -77,12 +86,12 @@ class PostController extends Controller
         $authKey = config('services.DeepL.DeepLkey'); 
         $translator = new Translator($authKey);
         
-        $result = $translator->translateText($response['lyrics']);
-        return view('search')->with([
-            'translation' => $result
-            ]);
+        // $result = $translator->translateText($response['lyrics']);
+        // return view('search')->with([
+        //     'translation' => $result
+        //     ]);
             
-            dd($result);
+        //     dd($result);
         
         
         // // GET通信するURL

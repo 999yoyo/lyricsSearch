@@ -22,11 +22,13 @@
         <div class='posts'>
             @foreach ($posts as $post)
                 <div class='post'>
-                    <p class='title'>{{ $post->title }}</p>
-                    <p class='body'>{{ $post->body }}</p>
+                    <p class='post-title'>{{ $post->title }}</p>
+                    <p class='post-body'>{{ $post->body }}</p>
                 </div>
             @endforeach
         </div>
+        
+         
 
              
         

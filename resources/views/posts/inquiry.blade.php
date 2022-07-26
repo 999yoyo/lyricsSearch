@@ -22,14 +22,13 @@
         <div class="contact-form">
           <div class="form-title">お問い合わせ</div>
           <p><a href ="/post">他ユーザーのコメント</a></p>
-          <form method="post" action="sent.php">
+          <form method="POST" action="/post">
+          @csrf
             <div class="form-item">名前</div>
-            <!-- この下にinputタグを書いていきましょう -->
-            <input type="text" name="name">
+            <input type="text" name="post[title]">
             
             <div class="form-item">内容</div>
-            <!-- この下にtextareaタグを書いていきましょう -->
-            <textarea name="body"></textarea>
+            <textarea name="post[body]"></textarea>
             <input type="submit" class="submit" value="送信">
           </form>
         </div>

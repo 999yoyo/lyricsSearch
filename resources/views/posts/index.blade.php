@@ -31,9 +31,7 @@
         <form action = "/search" method = "get">
             @csrf
             <div class='search'>
-                <h3>
-                    <span class="fa-regular fa-headphones-simple">曲名</span>
-                </h3>
+                <h3>曲名</h3>
                 <input type="text" name="title" value="{{ old('title') }}">
                 <p class="title__error" style="color:red">{{ $errors->first('title') }}</p>
                 <h3>アーティスト名</h3>

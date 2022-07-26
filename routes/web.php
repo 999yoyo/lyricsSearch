@@ -11,12 +11,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'PostController@index');
+
 Route::get('/search','PostController@search');
+Route::get('/', 'PostController@index');
 Route::get('/information','PostController@information');
+
 Route::get('/inquiry','PostController@inquiry');
 Route::get('/post' , 'PostController@post');
-
+Route::post('/post', 'PostController@store');
 //Route::get('/', function() {
 //    return view('posts/index');
 //});

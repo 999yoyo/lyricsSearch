@@ -179,6 +179,7 @@ li {
   background-color: #2f5167;
   padding: 16px;
   color: #fff;
+  margin-top: 50px;
 }
  
 
@@ -322,6 +323,36 @@ div {
 .form-item {
   padding: 20px 0 10px 0;
   font-weight: bold;
+}
+
+.post {
+  width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.post-title {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 80px;
+  background-color: #ffcc4a;
+  text-align: center;
+  border-radius: 300px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.post-body{
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #2f5167;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  margin-bottom: 0px;
+  line-height: 200px;
 }
 
 input[type="text"] {
