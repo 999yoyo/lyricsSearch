@@ -55,7 +55,7 @@ class PostController extends Controller
         $err = curl_error($curl);
         
         curl_close($curl);
-        dd($response);
+        //dd($response);
         // if (boolval($err)||!boolval($response['success'])) {
         if($err){
         	echo "cURL Error #:" . $err;
