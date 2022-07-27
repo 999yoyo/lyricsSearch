@@ -41,7 +41,7 @@ class PostController extends Controller
     {
         $curl = curl_init();
         // $title = rawurlencode($request["title"]);
-        // dd($title);
+        //dd($title);
         $title = rawurlencode($request["title"]);
         $artist = rawurlencode($request["artist"]);
         $apikey = config('services.powerlyrics.apikey');
@@ -64,7 +64,7 @@ class PostController extends Controller
         $err = curl_error($curl);
         
         curl_close($curl);
-          //dd($response);
+        dd($response);
         // if (boolval($err)||!boolval($response['success'])) {
         if($err){
         	echo "cURL Error #:" . $err;
