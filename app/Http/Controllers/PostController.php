@@ -44,7 +44,7 @@ class PostController extends Controller
         //dd($title);
         $title = rawurlencode($request["title"]);
         $artist = rawurlencode($request["artist"]);
-        $apikey = config('services.powerlyrics.apikey');
+        $apikey = config('app.powerlyrics');
         curl_setopt_array($curl, [
         	CURLOPT_URL => "https://powerlyrics.p.rapidapi.com/getlyricsfromtitleandartist?title=${title}&artist=${artist}",
         	CURLOPT_RETURNTRANSFER => true,
@@ -71,7 +71,6 @@ class PostController extends Controller
         	return view('posts/index');
         } else {
         	$response = json_decode($response,true);
-        	dd($response);
         	return view('posts/search')->with([
         	    'title' => $request['title'],
         	    'artist' => $request['artist'],

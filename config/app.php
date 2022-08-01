@@ -227,5 +227,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
     ],
+    
+    'powerlyrics' =>  env("POWERLYRICS_API_KEY"),
+
 
 ];
