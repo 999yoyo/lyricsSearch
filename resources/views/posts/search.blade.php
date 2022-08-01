@@ -54,54 +54,9 @@
                 Well versed in etiquette
                 Extraordinarily nice
                 
-                // <!--Shes a Killer Queen-->
-                // <!--Gunpowder, gelatine-->
-                // <!--Dynamite with a laser beam-->
-                // <!--Guaranteed to blow your mind-->
-                // <!--Anytime-->
                 
-                // <!--Recommended at the price-->
-                // <!--Insatiable an appetite-->
-                // <!--Wanna try?-->
-                
-                // <!--To avoid complications-->
-                // <!--She never kept the same address-->
-                // <!--In conversation-->
-                // <!--She spoke just like a baroness-->
-                // <!--Met a man from China-->
-                // <!--Went down to Geisha Minor-->
-                // <!--Then again incidentally-->
-                // <!--If youre that way inclined-->
-                
-                // <!--Perfume came naturally from Paris (naturally)-->
-                // <!--For cars she couldnt care less-->
-                // <!--Fastidious and precise-->
-                
-                // <!--// Shes a Killer Queen-->
-                // <!--// Gunpowder, gelatine-->
-                // <!--// Dynamite with a laser beam-->
-                // <!--// Guaranteed to blow your mind-->
-                // <!--// Anytime-->
-                
-                // <!--// Drop of a hat shes as willing as-->
-                // <!--// Playful as a pussy cat-->
-                // <!--// Then momentarily out of action-->
-                // <!--// Temporarily out of gas-->
-                // <!--// To absolutely drive you wild, wild-->
-                // <!--// Shes all out to get you-->
-                
-                // <!--// Shes a Killer Queen-->
-                // <!--// Gunpowder, gelatine-->
-                // <!--// Dynamite with a laser beam-->
-                // <!--// Guaranteed to blow your mind-->
-                // <!--// Anytime-->
-                
-                // <!--// Recommended at the price-->
-                // <!--// Insatiable an appetite-->
-                // <!--// Wanna try?-->
-                // <!--// You wanna try-->
-                // <!--// ', null, 'JA');-->
-                // <!--// echo $result->text; ?>-->
+                 ', null, 'JA');
+                echo $result->text; ?>
             </div>
             
         </div>

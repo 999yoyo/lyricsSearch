@@ -37,7 +37,7 @@ class PostController extends Controller
         return redirect('/post');
     }
         
-    public function search(PostRequest $request)
+    public function search(Request $request)
     {
         $curl = curl_init();
         // $title = rawurlencode($request["title"]);
@@ -64,7 +64,6 @@ class PostController extends Controller
         $err = curl_error($curl);
         
         curl_close($curl);
-        dd($response);
         // if (boolval($err)||!boolval($response['success'])) {
         if($err){
         	echo "cURL Error #:" . $err;
