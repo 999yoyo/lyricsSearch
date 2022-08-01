@@ -79,12 +79,12 @@ class PostController extends Controller
         }
      }
      
-     public function DeepL(Request $request){
-        require_once('..../vendor/autoload.php');
+    //  public function DeepL(Request $request){
+    //     require_once('..../vendor/autoload.php');
     
         
-        $authKey = config('services.DeepL.DeepLkey'); 
-        $translator = new Translator($authKey);
+    //     $authKey = config('services.DeepL.DeepLkey'); 
+    //     $translator = new Translator($authKey);
         
         // $result = $translator->translateText($response['lyrics']);
         // return view('search')->with([
@@ -92,15 +92,7 @@ class PostController extends Controller
         //     ]);
             
         //     dd($result);
-        
-        
-        // // GET通信するURL
-        // //$base_url = 'https://api-free.deepl.com/v2/translate';
-        // $API_KEY = config('services.DeepL.DeepLkey');
-        // //$url = auth_key={認証キー}&text={翻訳したい文字列}&target_lang={翻訳したい言語の指定}
-        // $url = "auth_key={config('services.DeepL.DeepLkey')}&text={りんご}&target_lang={EN}";
-        // dd($url);
      
-        }
+        // }
      }
 
