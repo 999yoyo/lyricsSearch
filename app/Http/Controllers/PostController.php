@@ -64,12 +64,14 @@ class PostController extends Controller
         $err = curl_error($curl);
         
         curl_close($curl);
+        
         // if (boolval($err)||!boolval($response['success'])) {
         if($err){
         	echo "cURL Error #:" . $err;
         	return view('posts/index');
         } else {
         	$response = json_decode($response,true);
+        	dd($response);
         	return view('posts/search')->with([
         	    'title' => $request['title'],
         	    'artist' => $request['artist'],
